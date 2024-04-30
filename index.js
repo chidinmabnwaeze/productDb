@@ -13,6 +13,9 @@ app.listen(port,()=>{
     console.log(`Server started on port ${port}`);
 })
 
-dbConnect() .then(function(){
+dbConnect().then(function(){
     console.log("database connection successful");
+})
+.catch(function(err){
+console.log(err)
 })
